@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Entre no Instagram</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='estilos/estiloentrar.css'>
+    <link rel="icon" href="imagens/icon-instagram.png" />
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <div class="caixa-login">
+      <div class="banner">  
+          <img src="imagens/home-phones.png" class="telefone1">
+          <img src="imagens/screenshot3.png" class="tela do telefone" id="tela">
+      </div>
+    
+  <div class="caixa-formulario">
+    <div class="caixa">
+        <img src="imagens/Instagram-Logo.png" class="logo" />
+
+        <input type="text" placeholder="Telefone, nome de usuário ou email" />
+        <input type="password" placeholder="Senha" />
+            <button class="cadastrebotao">Entrar</button>
+            <div class="espaco"></div>
+
+         <div class="linha">
+                <div></div>
+                <span>ou</span>
+                <div></div>
+         </div>
+
+         <img src="imagens/facebook-icon2.png" class="iconface">
+         <a class="entrecomface" href="facebook.com.br">Entre com o Facebook</a>
+         <br>
+         <a class="esqueci" href="https://www.instagram.com/accounts/password/reset/">Esqueceu a senha?</a>
+
+        </div>
+    <div class="cadastre-se">
+        <p>Não tem uma conta? <a class="linkcadastro" href="cadastroinsta.html">Cadastre-se</a></p>
+    </div>
+        <div class="caixa-aplicativos">
+            <p>
+                Obtenha o aplicativo.
+            </p>
+
+            <a href="https://l.instagram.com/?u=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.instagram.android%26referrer%3Dutm_source%253Dinstagramweb%2526utm_campaign%253DloginPage%2526ig_mid%253D08340C68-251E-442A-8463-87AF40272F90%2526utm_content%253Dlo%2526utm_medium%253Dbadge&e=AT0maoj7RcIycRc_oFcGY67LPefg67DCuKwn1TcKek6rBaxI3fIgfjSisjD18hu81Yf2yzxyeyCWnrAzlf_x5qYxf7dHZc37nEwdqcUxV_0bspubU7Q90E4fObJDFNKkdzsb380SjH3eSnPz2GMyoQ" target="_blank" >
+                <img src="imagens/googleplay.png"/> 
+            </a>
+
+            <a href="ms-windows-store://pdp/?productid=9nblggh5l9xt&referrer=appbadge&source=www.instagram.com&mode=mini&pos=0%2C0%2C1920%2C1032">
+            <img src="imagens/microsof.png">
+            </a>
+        </div>
+    </div>
+   </div>
+   
+   <script>
+    const tela = document.getElementById("tela");
+    let numero = 1;
+
+    function alterarImagem() {
+        setTimeout (() => {
+            tela.src = 'file:///Y:/WEBCRI-ENZO_SILVA/cadastro instagram/imagens/screenshot' + numero + '.png';
+
+            numero++;
+
+            if(numero == 5) {
+                numero = 1;
+            }
+
+            alterarImagem();
+         },  "2500");  
+    }
+
+    alterarImagem();
+   </script>
+
+</body>
+</html>

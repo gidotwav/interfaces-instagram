@@ -1,0 +1,26 @@
+button {
+    background-color: #3aa6ff;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 50px;
+    font-size: 16px;
+
+}
+
+.logo {
+    width: 200px;
+}
+
+h3 {
+    width: 270px;
+    color: #737373;
+    font-family: 'Arial';
+}
+
+input {
+    padding: 10px 5px;
+    width: 250px;
+    border-radius: 5px;
+    border: 1px solid rgb(216, 216, 216)
+}
